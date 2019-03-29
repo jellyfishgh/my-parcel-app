@@ -1,0 +1,53 @@
+{
+  "name": "my-parcel-app",
+  "version": "1.0.0",
+  "description": "parcel app powered by vue & react",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel -p 8080 watch index.html --open --out-dir dist/dev",
+    "build": "cross-env NODE_ENV=production parcel build index.html --out-dir dist/parcel --public-url /parcel --no-source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jellyfishgh/my-parcel-app.git"
+  },
+  "keywords": ["parcel", "vue", "react"],
+  "author": "jellyfish",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jellyfishgh/my-parcel-app/issues"
+  },
+  "homepage": "https://github.com/jellyfishgh/my-parcel-app#readme",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@vue/component-compiler-utils": "^2.6.0",
+    "autoprefixer": "^9.4.10",
+    "cross-env": "^5.2.0",
+    "cssnano": "^4.1.10",
+    "cssnano-preset-default": "^4.0.7",
+    "eslint": "^5.15.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0",
+    "less": "^3.9.0",
+    "postcss-modules": "^1.4.1",
+    "posthtml-img-autosize": "^0.1.3",
+    "pug": "^2.0.3",
+    "sass": "^1.17.2",
+    "vue-hot-reload-api": "^2.3.3",
+    "vue-template-compiler": "^2.6.8"
+  },
+  "dependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "vue": "^2.6.8",
+    "vue-router": "^3.0.2",
+    "vuex": "^3.1.0"
+  }
+}
